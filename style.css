@@ -7,6 +7,7 @@
 :root {
   --text-color: #E1E1E6;
   --bg-color: #2A2141;
+  --bg-bar: #7a757581;
 }
 
 body {
@@ -19,16 +20,108 @@ body * {
   color: var(--text-color);
 }
 
-.container {
-  max-width: 367px;
-  height: 498px;
-  padding: 38px;
-
-  margin: 0 auto;
-  border: 1px solid red;
+header {
+  text-align: center;
+  padding-top: 20px;
 }
 
-header {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 28px;
+}
+
+.initial-title h1{
+  margin-bottom: 12px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player img {
+  width: 300px;
+  border-radius: 10px;
+
+  margin-bottom: 29px;
+}
+
+.player-description {
+  width: 300px;
+}
+
+.player-description h2 {
+  margin-bottom: 5px;
+}
+
+.player-duration {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.player-duration .player-bar {
+  height: 9px;
+
+  background-color: var(--bg-bar);
+  
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.player-bar progress {
+  width: 50%;
+  height: 9px;
+}
+
+.player-bar .player-ball {
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-left: -2px;
+}
+
+.player-duration .player-temp {
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-buttons {
+  margin-top: 25px;
+  width: 100%;
+
+  font-size: 40px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player-buttons .button {
+  cursor: pointer;
+}
+
+.player-buttons .button-play, .button-pause {
+  font-size: 50px;
+}
+
+.player-buttons .button-pause {
+  display: none;
+}
+
+footer {
   text-align: center;
   padding: 20px;
 }
