@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #E1E1E6;
+  --bg-color: #2A2141;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 367px;
+  height: 498px;
+  padding: 38px;
+
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
