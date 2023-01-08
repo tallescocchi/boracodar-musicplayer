@@ -99,7 +99,7 @@ header {
 .player-bar .player-ball {
   font-size: 35px;
   border-radius: 50%;
-  margin-left: -10px;
+  margin-left: -19px;
 }
 
 .player-duration .player-temp {
@@ -110,7 +110,7 @@ header {
 }
 
 .player-buttons {
-  margin-top: 25px;
+  margin-top: 15px;
   width: 100%;
 
   font-size: 40px;
@@ -137,6 +137,23 @@ header {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links {
+  margin-top: 20px;
+  width: 300px;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links ion-icon:hover {
+  color: var(--hover-link)
 }

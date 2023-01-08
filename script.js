@@ -38,6 +38,8 @@ function renderMusic(index) {
 
     document.querySelector('.button-play').style.display = 'block'
     document.querySelector('.button-pause').style.display = 'none'
+
+    updateBar()
   })
 }
 
