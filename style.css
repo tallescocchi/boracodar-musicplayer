@@ -8,6 +8,7 @@
   --text-color: #E1E1E6;
   --bg-color: #2A2141;
   --bg-bar: #7a757581;
+  --hover-link: #8a6cd4;
 }
 
 body {
@@ -18,6 +19,14 @@ body {
 body * {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-link);
 }
 
 header {
@@ -36,6 +45,10 @@ header {
 
 .initial-title h1{
   margin-bottom: 12px;
+}
+
+.initial-title h1:hover{
+  color: var(--hover-link);
 }
 
 .player {
@@ -62,7 +75,7 @@ header {
 
 .player-duration {
   width: 300px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .player-duration .player-bar {
@@ -79,16 +92,14 @@ header {
 }
 
 .player-bar progress {
-  width: 50%;
+  width: 0;
   height: 9px;
 }
 
 .player-bar .player-ball {
-  width: 20px;
-  height: 20px;
-  background-color: var(--text-color);
+  font-size: 35px;
   border-radius: 50%;
-  margin-left: -2px;
+  margin-left: -10px;
 }
 
 .player-duration .player-temp {
@@ -111,6 +122,10 @@ header {
 
 .player-buttons .button {
   cursor: pointer;
+}
+
+.player-buttons .button:hover {
+  color: var(--hover-link)
 }
 
 .player-buttons .button-play, .button-pause {
